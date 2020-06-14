@@ -1,0 +1,32 @@
+{
+    "ssh_auth_fail":{
+        "filename": "/var/log/auth.log",
+        "condition": "Failed password for",
+        "alert": "SSH Authentication Failure Attempt",
+        "type": "alert"
+    },
+    "ssh_auth_success":{
+        "filename":"/var/log/auth.log",
+        "condition": " Accepted password for",
+        "type": "alert",
+        "alert": "SSH Authentication Successful Attempt"
+    },
+    "ssh_auth_inv_user":{
+        "filename": "/var/log/auth.log",
+        "condition": "Invalid user",
+        "type": "alert",
+        "alert": "Invalid user attempt"
+    },
+    "ssh_auth_succ_pubkey":{
+        "filename": "/var/log/auth.log",
+        "condition": "Accepted publickey for",
+        "type": "alert",
+        "alert": "SSH Authentication Successful Attempt"
+    },
+    "password_cracker":{
+        "filename": "kokos",
+        "condition": "\n",
+        "type": "password",
+        "alert": "A new password has been cracked"
+    }
+}
